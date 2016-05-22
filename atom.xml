@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://tjter.com/"/>
-  <updated>2016-05-22T15:46:47.000Z</updated>
+  <updated>2016-05-22T17:34:52.000Z</updated>
   <id>http://tjter.com/</id>
   
   <author>
@@ -14,6 +14,142 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Jenkins+GitHub+Xcode+fir搭了一个持续集成环境</title>
+    <link href="http://tjter.com/2016/05/23/Jenkins-GitHub-Xcode-fir%E6%90%AD%E4%BA%86%E4%B8%80%E4%B8%AA%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90%E7%8E%AF%E5%A2%83/"/>
+    <id>http://tjter.com/2016/05/23/Jenkins-GitHub-Xcode-fir搭了一个持续集成环境/</id>
+    <published>2016-05-22T17:33:29.000Z</published>
+    <updated>2016-05-22T17:34:52.000Z</updated>
+    
+    <content type="html">&lt;p&gt;原文链接 &lt;a href=&quot;http://xuanyiliu.com/chixujicheng/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Coding Duck&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;今天用Jenkins+GitHub+Xcode+fir搭了一个持续集成环境，把过程记录一下。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;#1. 安装Jenkins&lt;/p&gt;
+&lt;p&gt;###方法一：直接下载安装包&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;####&lt;a href=&quot;http://jenkins-ci.org&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://jenkins-ci.org&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;####下载好安装包后打开&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/232251-84b52e5c87244f72.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;第一步&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/232251-e2659dfa3e573dff.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;第二步&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/232251-f377f23b3489553f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;第三步&quot;&gt;&lt;/p&gt;
+&lt;p&gt;####安装完成后在&lt;u&gt;Terminal&lt;/u&gt;中输入,即可打开Jenkins。&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;open /Applications/Jenkins/jenkins.war&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;###方法二：使用命令行安装&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;####安装jenkins&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ brew install jenkins&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;####启动jenkins&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ jenkins&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;####卸载jenkins&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ brew uninstall jenkins&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;####brew无效？ 哦 安装homebrew&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;#2. 启动Jenkins后使用浏览器访问Jenkins&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;####地址为：&lt;a href=&quot;http://localhost:8080/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://localhost:8080/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;####使用安装包安装后会自动打开，如果端口冲突那么请修改端口&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;defaults write /Library/Preferences/org.jenkins-ci httpPort 7070&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;####访问成功后显示如下&lt;br&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/232251-cc8705aeb8114ccd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;成功启动jenkins&quot;&gt;&lt;/p&gt;
+&lt;p&gt;#3. 安装插件&lt;/p&gt;
+&lt;p&gt;####在系统管理 -&amp;gt; 插件管理中添加如下四个插件&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Xcode integration&lt;/p&gt;
+&lt;p&gt;GIT plugin&lt;/p&gt;
+&lt;p&gt;Post-Build Script Plug-in&lt;/p&gt;
+&lt;p&gt;GitHub plugin&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;####下面这两个方式都可以找到插件管理&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/232251-e76272ee752f7775.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;插件管理1&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/232251-3597a08b06595631.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;插件管理2&quot;&gt;&lt;/p&gt;
+&lt;p&gt;#4. 新建一个项目&lt;/p&gt;
+&lt;p&gt;###4.1 点击左侧工具栏”新建”，选择第一项”构建一个自由风格的软件项目”&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/232251-8dd54cb5c7554136.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;创建一个新项目&quot;&gt;&lt;/p&gt;
+&lt;p&gt;###4.2 基本信息&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/232251-94694d51387b6517.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;项目基本设置&quot;&gt;&lt;/p&gt;
+&lt;p&gt;###4.3 源码管理信息&lt;/p&gt;
+&lt;p&gt;####如果你是用的是Git，那就请选择Git,然后输入你的仓库地址&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我这里的仓库地址是Github的公有项目。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/232251-95b7953d1e1dfe61.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;源码管理&quot;&gt;&lt;/p&gt;
+&lt;p&gt;###4.4 自动构建时机&lt;/p&gt;
+&lt;p&gt;####这里就是告诉jenkins什么时候自动构建,这里我同时设置了每周一到周五在每天的8点到9点之间执行一次,当然也可以不设置。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/232251-a071aaf458312bfc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;构建时机设置&quot;&gt;&lt;/p&gt;
+&lt;p&gt;###4.5 构建&lt;/p&gt;
+&lt;p&gt;####添加构建步骤 -&amp;gt; Xcode基本信息&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;这里Target请于Xcode项目中Target的名字对应&lt;/li&gt;
+&lt;li&gt;Clean before build设置为YES&lt;/li&gt;
+&lt;li&gt;Configuration我选择了Release（在Release的时候Archive）&lt;/li&gt;
+&lt;li&gt;.ipa filename pattern 随便起个.ipa的名字&lt;/li&gt;
+&lt;li&gt;Output directory为.ipa的输出路径，我这里设置为 ${WORKSPACE}/build/&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/232251-fd5ba132e0a38ad3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;Xcode构建设置&quot;&gt;&lt;/p&gt;
+&lt;p&gt;####添加构建步骤 -&amp;gt; Xcode证书信息&lt;/p&gt;
+&lt;p&gt;我这里是在上传至Git的项目里已经配置过证书和Provisioning Profiles。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;打开Unlock Keychain&lt;/li&gt;
+&lt;li&gt;Keychain path 设置为 ${HOME}/Library/Keychains/login.keychain&lt;/li&gt;
+&lt;li&gt;Keychain password 为你钥匙串的密码&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/232251-d9d3acefcd6feb9f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;Xcode构建步骤&quot;&gt;&lt;/p&gt;
+&lt;p&gt;###4.6 构建后操作&lt;/p&gt;
+&lt;p&gt;####添加构建后操作步骤 &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;Execute a set of scripts&lt;/li&gt;
+&lt;li&gt;Add build step&lt;/li&gt;
+&lt;li&gt;Execute shell&lt;/li&gt;
+&lt;li&gt;在Commad中输入&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;fir p $&amp;#123;WORKSPACE&amp;#125;/build/TestJenkins.ipa -T #API Token#&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;其中${WORKSPACE}/build/为4.5中.ipa的输出路径，#API Token#为fir.im的API Token。新版fir.im获取方式见下面。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;#####请注意，在使用该命令前请先确认安装fir-cli，安装命令如下。&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo gem install fir-cli --no-ri --no-rdoc&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;上面的命令来自 fir.im 的工具 fir-cli，这是他们的官方使用说明 &lt;a href=&quot;http://blog.fir.im/fir_cli/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;官方工具 fir-cli 使用说明&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/232251-4671e790a6c72e56.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;构建后操作&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/232251-641169053ad0642a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;获取fir API Token&quot;&gt;&lt;/p&gt;
+&lt;p&gt;###4.7 完成，点击保存。&lt;/p&gt;
+&lt;p&gt;###4.8 点击立即构建。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;构建成功标志位置为蓝色，失败为红色。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/232251-89238651dcab7886.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;点击立即构建&quot;&gt;&lt;/p&gt;
+&lt;p&gt;#5 查看fir.im，应用上传成功。&lt;/p&gt;
+&lt;p&gt;#6 问题总结&lt;/p&gt;
+&lt;p&gt;###6.1 login.keychain的路径在哪？&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;####点击”系统管理”中的”系统设置”，Xcode Build中的Keychains&lt;br&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/232251-795c25f7b21de6a8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;Keychains路径获取方式&quot;&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;原文链接 &lt;a href=&quot;http://xuanyiliu.com/chixujicheng/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Coding Duck&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;今天用Jenkins+GitHub+Xcode+f
+    
+    </summary>
+    
+    
+      <category term="iOS, CI, Github, Jenkins, Xcode, fir.im" scheme="http://tjter.com/tags/iOS-CI-Github-Jenkins-Xcode-fir-im/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
