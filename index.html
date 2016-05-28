@@ -309,7 +309,7 @@
       
         
           
-            <p>原文链接 <a href="http://xuanyiliu.com/chixujicheng/" target="_blank" rel="external">Coding Duck</a></p>
+            <p>很久之前在简书上写的一篇文章，转过来</p>
 <p><strong>今天用Jenkins+GitHub+Xcode+fir搭了一个持续集成环境，把过程记录一下。</strong></p>
 <p>#1. 安装Jenkins</p>
 <p>###方法一：直接下载安装包</p>
@@ -317,9 +317,9 @@
 <p>####<a href="http://jenkins-ci.org" target="_blank" rel="external">http://jenkins-ci.org</a></p>
 </blockquote>
 <p>####下载好安装包后打开</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/232251-84b52e5c87244f72.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="第一步"></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/232251-e2659dfa3e573dff.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="第二步"></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/232251-f377f23b3489553f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="第三步"></p>
+<p><img src="http://7xkqix.com1.z0.glb.clouddn.com/install-1.png?attname=" alt="第一步"></p>
+<p><img src="http://7xkqix.com1.z0.glb.clouddn.com/install-2.png?attname=" alt="第二步"></p>
+<p><img src="http://7xkqix.com1.z0.glb.clouddn.com/install-3.png?attname=" alt="第三步"></p>
 <p>####安装完成后在<u>Terminal</u>中输入,即可打开Jenkins。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">open /Applications/Jenkins/jenkins.war</span><br></pre></td></tr></table></figure>
 <p>###方法二：使用命令行安装</p>
@@ -345,7 +345,7 @@
 </blockquote>
 <p>####使用安装包安装后会自动打开，如果端口冲突那么请修改端口</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">defaults write /Library/Preferences/org.jenkins-ci httpPort 7070</span><br></pre></td></tr></table></figure>
-<p>####访问成功后显示如下<br><img src="http://upload-images.jianshu.io/upload_images/232251-cc8705aeb8114ccd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="成功启动jenkins"></p>
+<p>####访问成功后显示如下<br><img src="http://7xkqix.com1.z0.glb.clouddn.com/startsuccess.png?attname=" alt="成功启动jenkins"></p>
 <p>#3. 安装插件</p>
 <p>####在系统管理 -&gt; 插件管理中添加如下四个插件</p>
 <blockquote>
@@ -355,22 +355,22 @@
 <p>GitHub plugin</p>
 </blockquote>
 <p>####下面这两个方式都可以找到插件管理</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/232251-e76272ee752f7775.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="插件管理1"></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/232251-3597a08b06595631.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="插件管理2"></p>
+<p><img src="http://7xkqix.com1.z0.glb.clouddn.com/plugin-1.png?attname=" alt="插件管理1"></p>
+<p><img src="http://7xkqix.com1.z0.glb.clouddn.com/plugin-2.png?attname=" alt="插件管理2"></p>
 <p>#4. 新建一个项目</p>
 <p>###4.1 点击左侧工具栏”新建”，选择第一项”构建一个自由风格的软件项目”</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/232251-8dd54cb5c7554136.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="创建一个新项目"></p>
+<p><img src="http://7xkqix.com1.z0.glb.clouddn.com/newaproject.png?attname=" alt="创建一个新项目"></p>
 <p>###4.2 基本信息</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/232251-94694d51387b6517.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="项目基本设置"></p>
+<p><img src="http://7xkqix.com1.z0.glb.clouddn.com/baseinfo.png?attname=" alt="项目基本设置"></p>
 <p>###4.3 源码管理信息</p>
 <p>####如果你是用的是Git，那就请选择Git,然后输入你的仓库地址</p>
 <blockquote>
 <p>我这里的仓库地址是Github的公有项目。</p>
 </blockquote>
-<p><img src="http://upload-images.jianshu.io/upload_images/232251-95b7953d1e1dfe61.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="源码管理"></p>
+<p><img src="http://7xkqix.com1.z0.glb.clouddn.com/gitinfo.png?attname=" alt="源码管理"></p>
 <p>###4.4 自动构建时机</p>
 <p>####这里就是告诉jenkins什么时候自动构建,这里我同时设置了每周一到周五在每天的8点到9点之间执行一次,当然也可以不设置。</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/232251-a071aaf458312bfc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="构建时机设置"></p>
+<p><img src="http://7xkqix.com1.z0.glb.clouddn.com/triggerinfo.png?attname=" alt="构建时机设置"></p>
 <p>###4.5 构建</p>
 <p>####添加构建步骤 -&gt; Xcode基本信息</p>
 <blockquote>
@@ -382,7 +382,7 @@
 <li>Output directory为.ipa的输出路径，我这里设置为 ${WORKSPACE}/build/</li>
 </ol>
 </blockquote>
-<p><img src="http://upload-images.jianshu.io/upload_images/232251-fd5ba132e0a38ad3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Xcode构建设置"></p>
+<p><img src="http://7xkqix.com1.z0.glb.clouddn.com/xcode-1.png?attname=" alt="Xcode构建设置"></p>
 <p>####添加构建步骤 -&gt; Xcode证书信息</p>
 <p>我这里是在上传至Git的项目里已经配置过证书和Provisioning Profiles。</p>
 <blockquote>
@@ -392,7 +392,7 @@
 <li>Keychain password 为你钥匙串的密码</li>
 </ol>
 </blockquote>
-<p><img src="http://upload-images.jianshu.io/upload_images/232251-d9d3acefcd6feb9f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Xcode构建步骤"></p>
+<p><img src="http://7xkqix.com1.z0.glb.clouddn.com/xcode-2.png?attname=" alt="Xcode构建步骤"></p>
 <p>###4.6 构建后操作</p>
 <p>####添加构建后操作步骤 </p>
 <blockquote>
@@ -410,19 +410,19 @@
 <p>#####请注意，在使用该命令前请先确认安装fir-cli，安装命令如下。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo gem install fir-cli --no-ri --no-rdoc</span><br></pre></td></tr></table></figure>
 <p>上面的命令来自 fir.im 的工具 fir-cli，这是他们的官方使用说明 <a href="http://blog.fir.im/fir_cli/" target="_blank" rel="external">官方工具 fir-cli 使用说明</a></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/232251-4671e790a6c72e56.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="构建后操作"></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/232251-641169053ad0642a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="获取fir API Token"></p>
+<p><img src="http://7xkqix.com1.z0.glb.clouddn.com/buildafter-1.png?attname=" alt="构建后操作"></p>
+<p><img src="http://7xkqix.com1.z0.glb.clouddn.com/getapitoken.png?attname=" alt="获取fir API Token"></p>
 <p>###4.7 完成，点击保存。</p>
 <p>###4.8 点击立即构建。</p>
 <blockquote>
 <p>构建成功标志位置为蓝色，失败为红色。</p>
 </blockquote>
-<p><img src="http://upload-images.jianshu.io/upload_images/232251-89238651dcab7886.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="点击立即构建"></p>
+<p><img src="http://7xkqix.com1.z0.glb.clouddn.com/build.png?attname=" alt="点击立即构建"></p>
 <p>#5 查看fir.im，应用上传成功。</p>
 <p>#6 问题总结</p>
 <p>###6.1 login.keychain的路径在哪？</p>
 <blockquote>
-<p>####点击”系统管理”中的”系统设置”，Xcode Build中的Keychains<br><img src="http://upload-images.jianshu.io/upload_images/232251-795c25f7b21de6a8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Keychains路径获取方式"></p>
+<p>####点击”系统管理”中的”系统设置”，Xcode Build中的Keychains<br><img src="http://7xkqix.com1.z0.glb.clouddn.com/q1.png?attname=" alt="Keychains路径获取方式"></p>
 </blockquote>
 
           
