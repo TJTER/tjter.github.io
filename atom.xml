@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://tjter.com/"/>
-  <updated>2016-05-28T12:24:05.000Z</updated>
+  <updated>2016-06-18T15:32:24.000Z</updated>
   <id>http://tjter.com/</id>
   
   <author>
@@ -14,6 +14,107 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hi TJTER</title>
+    <link href="http://tjter.com/2016/06/18/Hi/"/>
+    <id>http://tjter.com/2016/06/18/Hi/</id>
+    <published>2016-06-18T15:28:29.000Z</published>
+    <updated>2016-06-18T15:32:24.000Z</updated>
+    
+    <content type="html">&lt;h4 id=&quot;前言：想做点儿什么&quot;&gt;&lt;a href=&quot;#前言：想做点儿什么&quot; class=&quot;headerlink&quot; title=&quot;前言：想做点儿什么&quot;&gt;&lt;/a&gt;前言：想做点儿什么&lt;/h4&gt;&lt;p&gt;2016年4月的一天，回头想，天津和北京的区别在哪，真的是天津的技术人水平低么？还是高人存在只不过深居简出？北京的周末总是有各种技术沙龙和线上线下活动。可是天津我都没见过，我也不知道天津到底有没有这样的组织，把这些对技术着迷的人联系起来的组织，所以我想做一个。&lt;/p&gt;
+&lt;p&gt;我知道天津的技术人分为两种，第一种是刚毕业的大学生，留在天津工作；第二种是从北上广深回到天津结婚的技术人，这种人大概都有个至少4、5年的开发经验。天津也不乏好的互联网或者软件公司。天津不是一个闭塞的城市，她一直包容发展，从小在这种大剌剌的城市氛围里长起来，这里的人爱分享、爱交朋友、爱互相嘚吧嘚吧，那我想做一个这样的平台，我只是一个攒局儿的人，这个组织我叫它&lt;strong&gt;TJTER&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;##TJTER&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;天津的技术人&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;##TJTER里有什么？&lt;/p&gt;
+&lt;h4 id=&quot;线上的各种群&quot;&gt;&lt;a href=&quot;#线上的各种群&quot; class=&quot;headerlink&quot; title=&quot;线上的各种群&quot;&gt;&lt;/a&gt;线上的各种群&lt;/h4&gt;&lt;p&gt;微信！QQ！Telegram！你想通过啥渠道去交流，我就尽力去帮大家搭建这个平台。&lt;/p&gt;
+&lt;h4 id=&quot;线下活动&quot;&gt;&lt;a href=&quot;#线下活动&quot; class=&quot;headerlink&quot; title=&quot;线下活动&quot;&gt;&lt;/a&gt;线下活动&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;如果大家有任何问题，想要见面聊聊，ok，我们找个地方面基一下。&lt;/li&gt;
+&lt;li&gt;北京的“大牛”只要大家想接触，我尽力去联系。让他给我们讲讲他们的东西，我们学习借鉴。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;新鲜资讯&quot;&gt;&lt;a href=&quot;#新鲜资讯&quot; class=&quot;headerlink&quot; title=&quot;新鲜资讯&quot;&gt;&lt;/a&gt;新鲜资讯&lt;/h4&gt;&lt;p&gt;大家可以通过微信公众号，微博，Twitter，邮件，Blog等方式来关注我们，我会把知道的好东西第一时间发给大家。当然还有我们的Github。&lt;/p&gt;
+&lt;h4 id=&quot;学会分享&quot;&gt;&lt;a href=&quot;#学会分享&quot; class=&quot;headerlink&quot; title=&quot;学会分享&quot;&gt;&lt;/a&gt;学会分享&lt;/h4&gt;&lt;p&gt;如果你喜欢开发，对写代码有种如同吃饭睡觉一样的狂热需求；如果你想寻求帮助；如果你想接触更多和你一样的技术人；如果你想学更多的东西，就加入我们吧！&lt;/p&gt;
+&lt;h2 id=&quot;TJTER的自问自答&quot;&gt;&lt;a href=&quot;#TJTER的自问自答&quot; class=&quot;headerlink&quot; title=&quot;TJTER的自问自答&quot;&gt;&lt;/a&gt;TJTER的自问自答&lt;/h2&gt;&lt;h4 id=&quot;1-加入TJTER收费吗？&quot;&gt;&lt;a href=&quot;#1-加入TJTER收费吗？&quot; class=&quot;headerlink&quot; title=&quot;1. 加入TJTER收费吗？&quot;&gt;&lt;/a&gt;1. 加入TJTER收费吗？&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;不收费。线上的各种组织，资讯都是免费的。不过如果是线下活动可能是AA的，我尽力去找不要钱的地方，但是如果实在不行，最多也就是一杯咖啡钱。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;2-限制语言吗？&quot;&gt;&lt;a href=&quot;#2-限制语言吗？&quot; class=&quot;headerlink&quot; title=&quot;2. 限制语言吗？&quot;&gt;&lt;/a&gt;2. 限制语言吗？&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;不限制，只要你热爱开发，只要你想学习更多的东西。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;3-线下活动包含什么？&quot;&gt;&lt;a href=&quot;#3-线下活动包含什么？&quot; class=&quot;headerlink&quot; title=&quot;3. 线下活动包含什么？&quot;&gt;&lt;/a&gt;3. 线下活动包含什么？&lt;/h4&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;如果你在群里问了一个问题，其他人也有这个问题，大家觉得线上说着不过瘾，那我们就组织一个线下活动，大家痛快的说。&lt;/li&gt;
+&lt;li&gt;如果大家想跟北京的同仁交流，我尽最大能去去找，咱们跟他们聊聊。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;4-产品经理和测试呢？&quot;&gt;&lt;a href=&quot;#4-产品经理和测试呢？&quot; class=&quot;headerlink&quot; title=&quot;4. 产品经理和测试呢？&quot;&gt;&lt;/a&gt;4. 产品经理和测试呢？&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;产品经理就暂时算了吧。测试工程师当然要加入我们。测试是开发最好的伙伴。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;5-我是学生党，我可以加入吗？&quot;&gt;&lt;a href=&quot;#5-我是学生党，我可以加入吗？&quot; class=&quot;headerlink&quot; title=&quot;5. 我是学生党，我可以加入吗？&quot;&gt;&lt;/a&gt;5. 我是学生党，我可以加入吗？&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;当然可以，快来。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;6-必须是天津户口吗？&quot;&gt;&lt;a href=&quot;#6-必须是天津户口吗？&quot; class=&quot;headerlink&quot; title=&quot;6. 必须是天津户口吗？&quot;&gt;&lt;/a&gt;6. 必须是天津户口吗？&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;不用哦，只要你在天津工作、上学，就可以。（你必须爱天津）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;7-还有其他问题？&quot;&gt;&lt;a href=&quot;#7-还有其他问题？&quot; class=&quot;headerlink&quot; title=&quot;7. 还有其他问题？&quot;&gt;&lt;/a&gt;7. 还有其他问题？&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;关注微信公众号&lt;code&gt;tj_ter&lt;/code&gt;或者扫描下面二维码，或者发邮件给我&lt;a href=&quot;feedback@tjter.com&quot;&gt;Email&lt;/a&gt;，留言给我&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;http://tjter.com/uploads/wechat-qcode.jpg&quot; alt=&quot;tj_ter&quot;&gt;&lt;/p&gt;
+&lt;h4 id=&quot;8-攒局儿的是谁？&quot;&gt;&lt;a href=&quot;#8-攒局儿的是谁？&quot; class=&quot;headerlink&quot; title=&quot;8. 攒局儿的是谁？&quot;&gt;&lt;/a&gt;8. 攒局儿的是谁？&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;叫我宣宣吧，英文Echo，一直奋斗在iOS开发上，研究了各种移动端持续集成。在北京的天津人。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://github.com/xuanyi0627&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://xuanyiliu.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://weibo.com/xuanyi0627&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Weibo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;liuxuanyi0627@icloud.com&quot;&gt;Email&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;前言：想做点儿什么&quot;&gt;&lt;a href=&quot;#前言：想做点儿什么&quot; class=&quot;headerlink&quot; title=&quot;前言：想做点儿什么&quot;&gt;&lt;/a&gt;前言：想做点儿什么&lt;/h4&gt;&lt;p&gt;2016年4月的一天，回头想，天津和北京的区别在哪，真的是天津的技术人水平低么？还是
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>我曾是少年</title>
+    <link href="http://tjter.com/2016/06/18/I%20was%20young/"/>
+    <id>http://tjter.com/2016/06/18/I was young/</id>
+    <published>2016-06-18T15:10:10.000Z</published>
+    <updated>2016-06-18T15:31:59.000Z</updated>
+    
+    <content type="html">&lt;p&gt;从第一次接触北京互联网圈到现在已经是整整一年的时间了，在此之前来北京的次数屈指可数，直到15年6月14日，第一次自己来北京参加活动，这一次活动又燃起了心里压抑了三年的那把火。&lt;/p&gt;
+&lt;p&gt;三年前大学毕业，一心想写代码，家里反对，也要写代码，不让去北京，那就留在天津写代码。然后我进入了第一家公司，一个传统行业起家的上市公司，遇到了我的恩师 —— &lt;strong&gt;杨晓波先生&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;2013年3月4日，入职第一天，师父跟我说：“你做iOS开发吧！”，啥？当时的我只知道iPhone，还不知道iOS是啥，用啥语言，大学学的JAVA，HTML突然什么都用不上的感觉。很迷茫。师父是做前端出身的，后来做了架构师，现在做管理，也没做过iOS。师父给了我一本&lt;code&gt;Objective-C&lt;/code&gt;的基本语法，就是那本经典的图灵的水果系列的大橘子，那时候是iOS4，还是用的MRC，看完语法就跟着&lt;code&gt;Apple Developer&lt;/code&gt;网站的教程开始做，直到有一天师父问我，怎么样了，我说应该能做东西了吧。于是他就让我做了一个类似于Instagram的App，然后开始想，后端咋整？于是就开始寻求，找到了现在已经可以怀念的&lt;code&gt;Parse&lt;/code&gt;。之后有一个同事帮我做后端，我去做App端，而这些只是师父为了让我练习。&lt;/p&gt;
+&lt;p&gt;在这个过程中，我遇到了很多问题，没有人问，不知道问谁，当时做iOS的人不多，天津的更少，同学们大多转行或者做了JAVA或者前端，只有我，走了这条路，师父就给我介绍了另一个人 —— &lt;strong&gt;张蕾&lt;/strong&gt;，一个好姐姐，现在想想当初一些很傻的问题，比如数组越界，变量没有初始化等等都问她，她丝毫没有任何不耐烦和看不起我，而是很耐心的给我解答。现在想想如果没有她，我可能就真的放弃了。&lt;/p&gt;
+&lt;p&gt;记得当时的学习资料有限，也没有现在那么多教程，博客，当时想学东西，就是几个网站，&lt;code&gt;Apple Developer&lt;/code&gt;，&lt;code&gt;Raywenderlich&lt;/code&gt;，&lt;code&gt;AppCoda&lt;/code&gt;，还有&lt;code&gt;喵神&lt;/code&gt;的博客，当时多想看看视频啥的，多想有个交流群什么的，啥都没有。自己摸着石头过河，电脑也是，从Win到Mac，刷系统刷到所有资料Clean。好绝望。&lt;/p&gt;
+&lt;p&gt;来公司4个月的时候来了一个大哥，做Android的，我现在的好哥们，&lt;strong&gt;贾师傅&lt;/strong&gt;。（在此先祝贾师傅10月份新婚快乐）那段时间我跟贾师傅比着做东西，你做了一个，我也要做，那段时间也是增长最快的时候，感觉有了动力。贾师傅大我几岁，知道很多我不知道的东西，他也是一个很会讲故事的人，经常在办公室讲一些IT的周边新闻，技术的新鲜动态，因为公司本来就不是以互联网为主的，所以一开始觉得没有气氛，他的到来让我觉得特别新鲜，三年来，我们两个争吵过，现在也成了无话不说的好哥们，现在想来，那时候的快乐是因为每天都在接触新的东西，挑战没写过的东西。&lt;/p&gt;
+&lt;p&gt;还有老胡，曾哥，大哥，张伟。你们一路呵护着我，让我在刚入职场的时候丝毫没感觉到任何的“险恶人心”，一直单纯的学习新东西，做着自己喜欢的工作。是你们让我知道了“想学写代码，先学做人”。&lt;/p&gt;
+&lt;p&gt;直到离开你们，回家失声痛哭，却从没对你们说过一声谢谢。&lt;/p&gt;
+&lt;p&gt;####最后想谢谢一个人。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;杨晓波先生&lt;/strong&gt;：如果没有你，我不会走上iOS开发这条路；如果不是你，我不会现在做着我喜欢的工作；你给我提供了一个安全的港湾，去学习，你一次一次的肯定，一次一次的鼓励，让我在每次想要否定自己的时候有了一丝动力。你说过，“我没教过你开发的知识”。可是我现在依然记得，有一次在三楼会议室你给我讲的业务逻辑分析和多线程开发。你说“要做架构”，你说“要多学一些其他的东西”，你说“要有规范”，你说“人要学会承担责任”。你教会了我产品设计，开发流程，到现在我依然记得你说的四部曲“提需求－产品设计－开发－测试”。你教会了我太多太多，给了我部门里最好的物质资源。一日为师，终身为师。&lt;/p&gt;
+&lt;p&gt;####北京的诱惑&lt;/p&gt;
+&lt;p&gt;来了一次北京，参加了一次活动就把心留在这了。&lt;/p&gt;
+&lt;p&gt;不舍得父母，不舍得原来安稳的工作，但是我才25，我需要刺激！&lt;/p&gt;
+&lt;p&gt;北京的迷人之处在于“你觉得在天津傻不错的技术在这里只算是个刚入门”。这里的一切都是那么新鲜，好多东西没听说过，比起原来死板的工作氛围，这里更Geek。然后我的心告诉我——这儿，才应该是梦在此开始的时候！&lt;/p&gt;
+&lt;p&gt;####入职&lt;strong&gt;敢玩&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这里的人，不管是开发还是设计师都不是盖的，还有总裁，他们让我知道，原来在天津觉得还不错的技术在这里有了更多的挑战，他们对质量的高度要求也是让我越来越觉得自己的粗糙，有的时候不免有压力，也困惑，还想过放弃，也质疑过自己的能力，直到一次又一次的做到了原来不想做不会做的东西。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;从第一次接触北京互联网圈到现在已经是整整一年的时间了，在此之前来北京的次数屈指可数，直到15年6月14日，第一次自己来北京参加活动，这一次活动又燃起了心里压抑了三年的那把火。&lt;/p&gt;
+&lt;p&gt;三年前大学毕业，一心想写代码，家里反对，也要写代码，不让去北京，那就留在天津写代码。
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Jenkins+GitHub+Xcode+fir搭了一个持续集成环境</title>
